@@ -17,7 +17,9 @@ public class Main
 			System.out.println("Unesi nesto sto cu da ignorisem :) : ");
 			try 
 			{
-				br.readLine();
+				String unos = br.readLine();
+				if (unos.equals("q"))
+					novaNit.stop();
 			} catch (IOException e) 
 			{
 				e.printStackTrace();

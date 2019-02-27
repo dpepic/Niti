@@ -12,6 +12,8 @@ public class Nit extends Thread
 			try 
 			{
 				Thread.sleep(500);
+				System.out.println("Ja sam :)  " + this.getName());
+				System.out.println("Broj niti:" + Thread.activeCount());
 			} catch (InterruptedException e) 
 			{	
 				e.printStackTrace();
